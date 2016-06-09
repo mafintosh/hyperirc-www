@@ -1,7 +1,7 @@
 {
   "name": "hyperirc-www",
   "version": "0.0.0",
-  "description": "Reed IRC in the browser by joining the hyperirc network over webrtc,
+  "description": "Read IRC in the browser by joining the hyperirc network over webrtc",
   "main": "index.js",
   "dependencies": {
     "hypercore": "^4.2.5",
