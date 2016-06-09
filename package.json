@@ -1,0 +1,24 @@
+{
+  "name": "hyperirc-www",
+  "version": "0.0.0",
+  "description": "Reed IRC in the browser by joining the hyperirc network over webrtc,
+  "main": "index.js",
+  "dependencies": {
+    "hypercore": "^4.2.5",
+    "level-browserify": "^1.1.0",
+    "pump": "^1.0.1",
+    "signalhub": "^4.5.1",
+    "webrtc-swarm": "^2.4.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/hyperirc-www.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/hyperirc-www/issues"
+  },
+  "homepage": "https://github.com/mafintosh/hyperirc-www"
+}

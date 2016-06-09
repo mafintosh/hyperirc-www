@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    #header {
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      position: absolute;
+      left: 10px;
+      right: 10px;
+    }
+    #main {
+      position: absolute;
+      top: 50px;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      overflow: scroll;
+    }
+    body {
+      font-family: monospace;
+    }
+    pre {
+      padding: 0;
+      margin: 0;
+    }
+
+  </style>
+</head>
+<body>
+<div id="header">
+  Reading <span id="channel">(loading...)</span> over a p2p network. Connected to <span id="count">0</span> peer(s).
+</div>
+<div id="main"></div>
+<script src="bundle.js"></script>
+</body>
+</html>
