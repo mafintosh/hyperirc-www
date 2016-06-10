@@ -30,7 +30,7 @@ feed.get(0, function (err, channel) {
 
   if (!all) {
     feed.once('download', function () {
-      if (feed.blocks - end > 10) {
+      if (feed.blocks - end > 20) {
         stream.destroy()
         log('(skipping to latest messages)')
         tail()
@@ -41,7 +41,7 @@ feed.get(0, function (err, channel) {
   var stream = tail()
 
   function tail () {
-    var stream = feed.createReadStream({live: true, start: all ? 0 : Math.max(feed.blocks - 10, 1)})
+    var stream = feed.createReadStream({live: true, start: all ? 0 : Math.max(feed.blocks - 20, 1)})
       .on('data', function (data) {
         log(data.toString())
       })
