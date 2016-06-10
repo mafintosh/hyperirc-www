@@ -23,7 +23,7 @@ function log (msg) {
 feed.get(0, function (err, channel) {
   if (err) throw err
 
-  document.getElementById('channel').innerText = channel.toString()
+  document.title = document.getElementById('channel').innerText = channel.toString()
 
   var end = feed.blocks
 
