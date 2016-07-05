@@ -11,7 +11,7 @@ var cnt = 0
 var db = level('hyperirc.db')
 var core = hypercore(db)
 
-var feed = core.createFeed(key)
+var feed = core.createFeed(key, {sparse: true})
 var $main = document.getElementById('main')
 
 function log (msg) {
@@ -28,7 +28,7 @@ feed.get(0, function (err, channel) {
   var end = feed.blocks
 
   if (!all) {
-    feed.once('download', function () {
+    feed.get(feed.blocks, function () {
       if (feed.blocks - end > 25) {
         stream.destroy()
         log('(skipping to latest messages)')
